@@ -23,9 +23,7 @@
   "xcconfig": {
     "FRAMEWORK_SEARCH_PATHS": "$(inherited)"
   },
-  "pod_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
-  },
+  "pod_target_xcconfig": { 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => '-lObjC', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' },
   "resource_bundles": {
     "OnyxCamera": [
       "OnyxCamera/Assets/*.*"
